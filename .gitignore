@@ -1,0 +1,43 @@
+# .NET Core
+bin/
+obj/
+*.db
+*.log
+*.pdb
+*.user
+*.vs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Angular
+node_modules/
+dist/
+out-tsc/
+coverage/
+.angular/
+.angular/cache/
+.angular/config.json
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDEs and editors
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+*.idea/
+*.iml
+*.vscode/
+*.vs/
