@@ -1,0 +1,22 @@
+$utilities: (
+  'position': (
+    property: position,
+    class: 'position',
+    values: static fixed absolute relative sticky
+  ),
+  'bottom': (
+    property: bottom,
+    class: 'bottom',
+    values: 0 1rem 2rem 3rem
+  ),
+  'end': (
+    property: right,
+    class: 'end',
+    values: 0 1rem 2rem 3rem
+  ),
+  'border': (
+    property: border,
+    class: 'bd',
+    values: none solid dashed
+  )
+);

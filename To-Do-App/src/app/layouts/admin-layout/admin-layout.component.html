@@ -1,0 +1,24 @@
+<div class="matero-container-wrap" dir="ltr">
+    <ng-progress ngProgressRouter />
+    <mat-sidenav-container class="matero-container" autosize autoFocus>
+        <mat-sidenav 
+            class="sidenav"
+            #sidenav
+            mode="side"
+            (closedStart)="onSidenavClosed()"
+            opened="true"
+        >
+            <app-sidebar></app-sidebar>
+        </mat-sidenav>
+        <mat-sidenav-content #content class="matero-content">
+            <app-header
+                (toggleSidenav)="toggleSidenav()"
+                [showToggle]="isSidenavOpen"
+            />
+            <main class="matero-page-content">
+                <router-outlet />
+            </main>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+    
+</div>  

@@ -1,0 +1,8 @@
+<div class="position-fixed bottom-0 end-0 m-b-4 m-r-4 bd-mode-toggle" style="z-index: 1000;">
+  <button mat-mini-fab (click)="toggleTheme()">
+    <mat-icon *ngIf="!isDarkTheme">dark_mode</mat-icon>
+    <mat-icon *ngIf="isDarkTheme">light_mode</mat-icon>
+  </button>
+</div>
+
+<router-outlet />

@@ -1,0 +1,10 @@
+<mat-toolbar>
+    <button mat-icon-button class="example-icon"(click)="toggleSidenav.emit()">
+        <mat-icon>{{ showToggle ? 'close' : 'menu' }}</mat-icon>
+    </button>
+    <span class="flex-fill"></span>
+    <button mat-icon-button class="hide-small" (click)="toggleFullscreen()">
+        <mat-icon>fullscreen</mat-icon>
+    </button>
+    <app-user></app-user>
+</mat-toolbar>

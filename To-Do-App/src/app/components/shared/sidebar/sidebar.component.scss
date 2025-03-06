@@ -1,0 +1,15 @@
+@use '../../../../styles/breakpoints';
+
+.matero-sidebar-header {
+  overflow: hidden;
+
+  mat-toolbar {
+    width: var(--sidenav-width);
+    padding: 0 0.5rem;
+  }
+
+  // Remove redundant padding in the slide toggle
+  mat-slide-toggle .mdc-label {
+    display: none;
+  }
+}

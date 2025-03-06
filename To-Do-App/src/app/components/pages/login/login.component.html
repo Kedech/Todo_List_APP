@@ -1,0 +1,28 @@
+<div class="d-flex w-full h-full">
+    <mat-card class="m-auto" style="max-width: 380px;">
+        <mat-card-header class="m-b-24">
+            <mat-card-title>👋 Welcome!</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <form class="form-field-full" action="">
+                <mat-form-field appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input matInput type="text">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Password</mat-label>
+                    <input matInput type="password">
+                </mat-form-field>
+                <button mat-flat-button class="w-full d-flex justify-content-center align-items-center">
+                    <span class="d-flex justify-content-center align-items-center">
+                        Login <mat-spinner *ngIf="loading;" diameter="20" class="m-l-8"></mat-spinner>
+                    </span>
+                </button>
+                <div class="d-flex justify-content-center align-items-center m-t-16">
+                    <span>Don't have an acount?</span>
+                    <a class="m-l-4" [routerLink]="['/auth/register']" routerLinkActive="router-link-active" >Clic here to create one</a>
+                </div>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>
